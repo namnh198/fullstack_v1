@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family:  'Proxima Nova';
+	src: url(fonts/Proxima-Nove-Bold.otf);
+	font-weight: bold;
+}
+@font-face {
+	font-family:  'Proxima Nova';
+	src: url(fonts/Proxima-Nova-Thin.otf);
+	font-weight: lighter;
+}
+@font-face {
+	font-family:  'Proxima Nova';
+	src: url(fonts/Proxima-Nove-Regular.ttf);
+	font-weight: normal;
+}
+input:focus, input:active {
+	outline: none;
+}
+body {
+	background: #4e545d url(images/login-form.png) repeat left top;
+	font-family: 'Proxima Nova';
+	font-weight: bold;
+}
+#login-form {
+	position: relative;
+	width: 475px;
+	background: url(images/form-bg.png) no-repeat center center;
+	margin: 150px auto;
+	border-radius: 5px;
+}
+.icon-form {
+	position: absolute;
+	top: -88px;
+	left: 50%;
+	margin-left: -37px;
+}
+.title {
+	padding-top: 70px;
+	text-align: center;
+}
+.title h1 {
+	font-weight: bold;
+	font-size: 36px;
+	color: #36383c;
+	margin-bottom: 5px;
+}
+.title h2 {
+	font-weight: normal;
+	font-size: 22px;
+	color: #858a93;
+}
+#login-form form {
+	padding: 25px 45px ;
+}
+#login-form form div:first-child, #login-form form div:nth-child(2) {
+	box-sizing: border-box;
+	background-color: #e5e7e9;
+	border: 1px solid rgb(173, 174, 176);
+	padding: 20px 25px;
+	
+}
+#login-form form div:first-child {
+	border-radius: 4px 4px 0 0;
+	border-bottom: none;
+}
+#login-form form div:nth-child(2) {
+	border-radius: 0px 0px 4px 4px;
+	border-top-color: #bec0c2;
+}
+#login-form form div > input {
+	padding: 10px 50px;
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	color: #858a93;
+	font-family: 'Proxima Nova', sans-serif;
+}
+#login-form form div:first-child > input {
+	background: url(images/mail-icon.png) no-repeat left center;
+}
+#login-form form div:nth-child(2) > input {
+	background: url(images/password-icon.png) no-repeat left center;
+}
+#login-form form div:last-child {
+	margin-top: 30px;
+	background: #46baa9 url(images/login-btn-bg.png) repeat-x left top;
+	width: 389px;
+	height: 72px;
+	border-radius: 5px;
+	border: 1px solid #2a8b7b;
+}
+#login-form form div > button {
+	font-family: "Proxima Nova";
+	font-weight: bold;
+	font-size: 36px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	border: none;
+	background: transparent;
+	line-height: 72px;
+}
