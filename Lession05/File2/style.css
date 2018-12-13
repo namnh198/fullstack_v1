@@ -19,7 +19,7 @@ html, body {
 	height: 100%;
 	padding-top: 150px;
 	background-color: rgba(50,15,53,1);
-	background-image: radial-gradient(circle, rgba(255,255,255,0.21) -150%, rgba(50,15,53,1) 100%);
+	background-image: radial-gradient(circle, rgba(255,255,255,0.21) 0%, rgba(50,15,53,1) 100%);
 }
 .form-login {
 	width: 400px;
