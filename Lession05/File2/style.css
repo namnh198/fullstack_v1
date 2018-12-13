@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 12px;
+	overflow: hidden;
+}
+.clear {
+	clear: both;
+}
+.form-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 150px;
+	background-color: rgba(50,15,53,1);
+	background-image: radial-gradient(circle, rgba(255,255,255,0.21) -150%, rgba(50,15,53,1) 100%);
+}
+.form-login {
+	width: 400px;
+	min-height: 250px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f2f2f2;
+	border-radius: 3px;
+}
+.header {
+	height: 63px;
+	background-color: #7b537e;
+	border: 1px solid #8d6590;
+	border-radius: 3px 3px 0 0;
+	padding: 0 22px;
+	line-height: 63px;
+}
+.header h1 {
+	float: left;
+	font-size: 14px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+.header a {
+	float: right;
+	transform: rotate(45deg);
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+form {
+	padding: 22px;
+}
+form > div > input {
+	display: block;
+	width: 100%;
+	padding: 22px;
+	margin-bottom: 23px;
+	border-radius: 3px;
+	border: 1px solid rgba(220, 220, 220, 0.86);
+	color: #999;
+	outline: none;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+}
+form > div > input:first-child {
+	background: #f0eef0 url(images/user.png) no-repeat calc(100% - 22px) center;
+}
+form > div > input:last-child {
+	background: #f0eef0 url(images/locked.png) no-repeat calc(100% - 22px) center;
+}
+form > div > input:focus, form > div > input:active {
+	outline: none;
+}
+form > div > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 12px;
+  	font-family: 'Helvetica Neue', sans-serif;
+  	color: #999;
+  	font-weight: bold;
+}
+form > div > input::-moz-placeholder { /* Firefox 19+ */
+	font-size: 12px;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #999;
+	font-weight: bold;
+}
+form > div > input:-ms-input-placeholder { /* IE 10+ */
+	font-size: 12px;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #999;
+	font-weight: bold;
+}
+form > div > input:-moz-placeholder { /* Firefox 18- */
+	font-size: 12px;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #999;
+	font-weight: bold;
+}
+form > div > button {
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+	background-color: #7b537e;
+	border: 1px solid #8d6590;
+	border-radius: 3px;
+	font-weight: bold;
+	font-family: 'Helvetica Neue', sans-serif;
+	margin-right: 30px;
+	display: inline-block;
+}
+form > div > a {
+	text-decoration: none;
+	font-family: 'Helvetica Neue', sans-serif;
+	color: #999;
+}
