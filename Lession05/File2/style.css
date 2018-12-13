@@ -55,12 +55,14 @@ html, body {
 	font-family: 'Helvetica Neue', sans-serif;
 }
 form {
-	padding: 22px;
+	padding: 22px 22px 34px;
 }
 form > div > input {
 	display: block;
 	width: 100%;
-	padding: 22px;
+	height: 50px;
+	line-height: 50px;
+	padding: 20px;
 	margin-bottom: 23px;
 	border-radius: 3px;
 	border: 1px solid rgba(220, 220, 220, 0.86);
@@ -70,10 +72,10 @@ form > div > input {
 	font-weight: bold;
 }
 form > div > input:first-child {
-	background: #f0eef0 url(images/user.png) no-repeat calc(100% - 22px) center;
+	background: #f0eef0 url(images/user.png) no-repeat calc(100% - 15px) center;
 }
 form > div > input:last-child {
-	background: #f0eef0 url(images/locked.png) no-repeat calc(100% - 22px) center;
+	background: #f0eef0 url(images/locked.png) no-repeat calc(100% - 15px) center;
 }
 form > div > input:focus, form > div > input:active {
 	outline: none;
@@ -103,7 +105,7 @@ form > div > input:-moz-placeholder { /* Firefox 18- */
 	font-weight: bold;
 }
 form > div > button {
-	padding: 15px;
+	padding: 12px 30px;
 	text-align: center;
 	color: #fff;
 	background-color: #7b537e;
