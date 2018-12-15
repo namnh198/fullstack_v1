@@ -1,88 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bài tập buổi 14</title>
+	<title> Project Front End </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="../favicon.ico">
-	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/ico.png" type="image/png" sizes="256x256">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,800,900|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=vietnamese"
+	 rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<!-- Start menu left -->
-	<div class="menu menu-vertical left-menu">
-		<h2>Menu</h2>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-	</div>
-	<!-- End menu left -->
-	<!-- Start menu right -->
-	<div class="menu menu-vertical right-menu">
-		<h2>Menu</h2>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-	</div>
-	<!-- End menu right -->
-	<!-- Start menu top -->
-	<div class="menu menu-horizontal top-menu">
-		<h2>Menu</h2>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-	</div>
-	<!-- Start menu bottom -->
-	<div class="menu menu-horizontal bottom-menu">
-		<h2>Menu</h2>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-		<a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Services</a>
-		<a href="#">Our Team</a>
-		<a href="#">Contact</a>
-	</div>
-	<!-- End menu bottom -->
-
-	<!-- Button Slide Menu-->
-	<div class="container">
-		<div class="header">
-			<span>Fullstack Cource</span>
-			<h1>Lession 14: Slide and Push Menu</h1>
+	<a href="#" id="backtotop">
+		<i class="fa fa-arrow-up"></i>
+	</a>
+	<header id="top-header">
+		<div class="container"> 
+			<div class="row">
+				<ul class="list-inline header-contact">
+					<li>
+						<i class="fa fa-address-card"></i> 235 - Nguyễn Văn Trỗi - Mỗ Lao - Q.Hà Đông.HN
+					</li>
+					<li>
+						<i class="fa fa-phone"></i> 0359538855
+					</li>
+					<li>
+						<a href="mailto:namptit.dev@gmail.com">
+							<i class="fa fa-envelope-o"></i>
+							namptit.dev@gmail.com
+						</a>
+					</li>
+				</ul>
+				<ul class="list-inline social">
+					<li>
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="button">
-			<h2>Slide Menu</h2>
-			<button id="showLeft">Show/Hide Left Slide Menu</button>
-			<button id="showRight">Show/Hide Right Slide Menu</button>
-			<button id="showTop">Show/Hide Top Slide Menu</button>
-			<button id="showBottom">Show/Hide Bottom Slide Menu</button>
-			<h2>Push Menu</h2>
-			<button id="showPushLeft">Show/Hide Left Push Menu</button>
-			<button id="showPushRight">Show/Hide Right Push Menu</button>
+	</header>
+	<nav class="navbar navbar-default main-navbar" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<i class="fa fa-bars"></i> Menu
+				</button>
+				<a class="navbar-brand animate" href="#">
+					<img class="img-responsive" src="images/logo.png">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="main-nav">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#" id="menu1">Home</a>
+					</li>
+					<li>
+						<a href="#" id="menu2">Services</a>
+					</li>
+					<li>
+						<a href="#" id="menu3">Skill</a>
+					</li>
+					<li>
+						<a href="#" id="menu4">Portfolio</a>
+					</li>
+					<li>
+						<a href="#" id="menu5">About</a>
+					</li>
+					<li>
+						<a href="#" id="menu6">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="banner">
+		<div id="particles-js">
+			<div class="particles">
+				<div class="intro-text">
+					<strong>Lớp học
+						<span class="animate">Fullstack.</span>
+					</strong>
+					<p>
+						It's Nice To Meet You
+					</p>
+				</div>
+			</div>
+			<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1898" height="625"></canvas>
 		</div>
 	</div>
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/index.js"></script>
+	<div class="welcome text-center">
+		<div class="container">
+			<div class="title">
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua.</h4>
+			</div>
+			<button class="btn btn-welcome">
+				<i class="fa fa-play"></i>Tell Me More
+			</button>
+		</div>
+	</div>
+	<div class="services">
+		<div class="container">
+			<div class="title">
+				<h2>Services</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua.</h4>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 text-center">
+						<i class="fa fa-shopping-cart"></i>
+						<h3>E-Commerce</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+							dicta impedit.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 text-center">
+						<i class="fa fa-desktop"></i>
+						<h3>Responsive Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+							dicta impedit.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 text-center">
+						<i class="fa fa-lock"></i>
+						<h3>Web Security</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+							dicta impedit.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="skill">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="title">
+						<h2>Our's Skill</h2>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua.</h4>
+					</div>
+					<div class="content">
+						<div class="box-wrapper">
+							<div class="box">
+								<div class="codeskill">
+									<div class="codeSkillTitle webColor">Thiết kế Web</div>
+									<div class="progress web"></div>
+									<div class="progress_value">90%</div>
+								</div>
+								<div class="codeskill">
+									<div class="codeSkillTitle appColor">Thiết kế Ứng dụng</div>
+									<div class="progress app"></div>
+									<div class="progress_value">75%</div>
+								</div>
+								<div class="codeskill">
+									<div class="codeSkillTitle seoColor">SEO & Marketing</div>
+									<div class="progress seo"></div>
+									<div class="progress_value">50%</div>
+								</div>
+								<div class="codeskill">
+									<div class="codeSkillTitle devColor">Phát triển Web</div>
+									<div class="progress dev"></div>
+									<div class="progress_value">70%</div>
+								</div>
+								<div class="codeskill">
+									<div class="codeSkillTitle dsColor">Graphic Design</div>
+									<div class="progress ds"></div>
+									<div class="progress_value">45%</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio">
+		<div class="container">
+			<div class="title">
+				<h2>Portfolio</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua.</h4>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/01-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Threads</h4>
+							<p class="text-muted">Illustration</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/02-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Explore</h4>
+							<p class="text-muted">Graphic Design</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/03-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Finish</h4>
+							<p class="text-muted">Identity</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/04-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Lines</h4>
+							<p class="text-muted">Branding</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/05-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Southwest</h4>
+							<p class="text-muted">Website Design</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fa fa-plus fa-3x"></i>
+								</div>
+							</div>
+							<img class="img-responsive" src="images/fortfolio/06-thumbnail.jpg" alt="">
+						</a>
+						<div class="portfolio-caption">
+							<h4>Window</h4>
+							<p class="text-muted">Photography</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about">
+		<div class="container">
+			<div class="title">
+				<h2>About</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua.</h4>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="timeline">
+							<li>
+								<div class="timeline-image">
+									<img class="img-responsive img-circle" src="images/about/1.jpg" alt="">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>2009-2011</h4>
+										<h4 class="subheading">Our Humble Beginnings</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+											totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+											consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<img class="img-responsive img-circle" src="images/about/2.jpg" alt="">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>March 2011</h4>
+										<h4 class="subheading">An Agency is Born</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+											totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+											consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="timeline-image">
+									<img class="img-responsive img-circle" src="images/about/3.jpg" alt="">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>December 2012</h4>
+										<h4 class="subheading">Transition to Full Service</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+											totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+											consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<img class="img-responsive img-circle" src="images/about/4.jpg" alt="">
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>July 2014</h4>
+										<h4 class="subheading">Phase Two Expansion</h4>
+									</div>
+									<div class="timeline-body">
+										<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
+											totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+											consectetur!</p>
+									</div>
+								</div>
+							</li>
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4>Be Part
+										<br>Of Our
+										<br>Story!</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="contact">
+		<div class="container">
+			<div class="title">
+				<h2>Contact</h2>
+				<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua.</h4>
+			</div>
+			<div class="content">
+				<div class="row">
+					<div class="col-lg-12">
+						<form id="contactForm" name="sentMessage" novalidate="">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" id="name" type="text" placeholder="Your Name *" required="">
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="email" type="email" placeholder="Your Email *" required="">
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="btn btn-welcome" type="submit">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<span class="copyright">Copyright © Your Website 2018</span>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline social">
+						<li class="list-inline-item">
+							<a href="#">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/1.js"></script>
 </body>
+
 </html>
