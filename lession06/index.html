@@ -1,57 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Lession 06 - Javacript Thuần</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS/JQUERY - Game Memory Cards</title>
+    <link rel="icon" type="image/png" href="../favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<h1> Progress Bar </h1>
-	<button id="btnPr_Bar">Start</button>
-	<div class="pr_bar">
-		<div id="progressbar"></div>
-		<h2 id="txtPr_Bar">0%</h2>
-	</div>
+    <div id="snow"></div>
 
-	<h1>Control Box</h1>
-	<div class="ctrl_box">
-		<div id="controlBox">0%</div>
-	</div>
-	<input type="range" id="rangCtrlBox" min="0" max="100" value="0" />
+    <div class="wrap">
+        <div class="timer">
+            <div class="progressbar" style="display: none;">
+                <progress max="100" value="100"></progress>
+            </div>
+        </div>
 
-	<h1>Zoom Out</h1>
-	<button id="runZoomOut">Action</button>
-	<div id="zoomout"></div>
+        <div class="content"></div>
+    </div>
 
-	<h1>Opacity</h1>
-	<div class="opacity">
-		<div id="boxOpacity1"></div>
-		<div id="boxOpacity2"></div>
-	</div>
+    <div class="modal begin">
+        <div class="dialog">
+            <h1>Memory card</h1>
+            <h2>Choose play mode</h2>
+            <button class="btn btn-start normal" onclick="startGame(1)">Normal</button>
+            <button class="btn btn-start hard" onclick="startGame(2)">Hard</button>
+        </div>
+    </div>
 
-	<h1> Change Color </h1>
-	<div id="color"></div>
-	<div class="change_color-line">
-		<div>
-			<label>R</label>
-			<input type="range" min="0" max="0" value="255" id="color_r">
-		</div>
-		<div>
-			<label>G</label>
-			<input type="range" min="0" max="0" value="255" id="color_g">
-		</div>
-		<div>
-			<label>B</label>
-			<input type="range" min="0" max="0" value="255" id="color_b">
-		</div>
-	</div>
+    <div class="modal win">
+        <div class="dialog">
+            <img src="img/win.png"/>
+            <h1>You are win</h1>
+        </div>
+    </div>
 
-	<h1> Circle Change </h1>
-	
-	<div class="circle-wrap">
-		<p>Width : <span class="txtCircle"> 20px </span> - Height : <span class="txtCircle"> 20px </span></p>
-		<div id="boxCircle"></div>
-	</div>
-	<script src="main.js"></script>
+    <div class="modal lose">
+        <div class="dialog">
+            <img src="img/lose.png"/>
+            <h1>
+                Time over <br/>
+                <button class="btn btn-reset" onclick="loadContent()">Play again</button>
+            </h1>
+        </div>
+    </div>
+
+    <div class="modal-backdrop"></div>
+
+    <audio id="bg-music">
+        <source src="audio/normal.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="flip-sound">
+        <source src="audio/flip.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="incorrect-sound">
+        <source src="audio/incorrect.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="correct-sound">
+        <source src="audio/correct.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="count10-sound">
+        <source src="audio/10s.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="count5-sound">
+        <source src="audio/5s.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="win-sound">
+        <source src="audio/win.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="lose-sound">
+        <source src="audio/lose.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
