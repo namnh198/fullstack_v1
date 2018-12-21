@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 20px;
+}
+
+div {
+	width: 90%;
+	margin: 20px auto;
+	height: 50px;
+	background-color: green;
+	border-radius: 4px;
+}
+
+button {
+	width: 100px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+	background-color: #acacac;
+	font-size: 13px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="range"] {
+	display: inline-block;
+	width: 90%;
+}
+
+.pr_bar {
+	background-color: #ddd;
+	position: relative;
+}
+
+#progressbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: green;
+	width: 0;
+	margin: 0;
+}
+
+#txtPr_Bar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.ctrl_box {
+	position: relative;
+}
+
+#controlBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: red;
+	font-weight: bold;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+}
+
+#rangCtrlBox {
+	display: block;
+	margin: 20px auto;
+}
+
+#zoomout {
+	width: 40%;
+	height: 150px;
+}
+
+.opacity {
+	background-color: transparent;
+	height: 150px;
+}
+
+.opacity > div {
+	width: 150px;
+	height: 150px;
+	margin: 0;
+	margin-left: 30px;
+	display: inline-block;
+}
+
+#boxOpacity1 {
+	background-color: green;
+}
+
+#boxOpacity2 {
+	background-color: blue;
+}
+
+#color {
+	width: 250px;
+	height: 250px;
+	background-color: rgb(0,0,0);
+}
+
+.change_color-line, .change_color-line > div {
+	background-color: transparent;
+	width: 300px;
+	height: auto;
+}
+
+.change_color-line label {
+	float: left;
+	margin-right: 10px;
+}
+
+.circle-wrap {
+	background-color: #fff;
+	width: 500px;
+	height: 300px;
+	position: relative;
+}
+
+#boxCircle {
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

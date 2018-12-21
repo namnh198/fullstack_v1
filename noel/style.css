@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body, #christmas_scene {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'Lobster';
+	font-size: 30px;
+	color: #fff;
+}
+.col-3 {
+	float: left;
+	width: 25%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#container.parallax-container {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(to bottom, rgb(14, 81, 133) 0%, rgb(26, 139, 178) 60%, rgb(33, 159, 193) 100%);
+}
+#christmas_scene::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(images/top-snow-pattern.png) repeat-x;
+}
+#christmas_scene .layer {
+	width: 100%;
+	height: 100%;
+}
+#christmas_scene .layer-photo {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+#christmas_scene .photo-zoom {
+	transform: scale(1.05);
+}
+#christmas_scene .layer-1 {
+	background-image: url("images/parallax/layer1.png");
+	background-position: 40% bottom;
+}
+#christmas_scene .layer-2 {
+	background-image: url("images/parallax/layer2.png");
+	background-position: center bottom;
+}
+#christmas_scene .layer-3 {
+	background-image: url("images/parallax/layer3.png");
+	background-position: center bottom;
+}
+#christmas_scene .layer-4 {
+	background-image: url("images/parallax/layer4.png");
+	background-position: center bottom;
+}
+#christmas_scene .layer-5 {
+	background-image: url("images/parallax/layer5.png");
+	background-position: center bottom;
+}
+#countdown {
+	position: absolute;
+	width: 600px;
+	top: 0;
+	left: 50%;
+	margin-left: -300px;
+	padding-top: 65px;
+	font-size: 40px;
+}
+#countdown .countdown-globe {
+	position: relative;
+	height: 200px;
+	margin-top: 10px;
+	text-align: center;
+	color: #fff;
+}
+#countdown .countdown-globe::before {
+	background: url(images/countdown-globe.png) no-repeat bottom center;
+	background-size: contain;
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: -100px;
+	left: 0;
+	
+}
+#countdown .countdown-globe span {
+	display: block;
+	font-size: 20px;
+}
+.merry-christmas-text {
+	width: 100%;
+	text-align: center;
+	font-family: 'Parisienne';
+	font-size: 80px;
+	position: absolute;
+	top: 180px;
+	padding: 0 15px;
+}
+.happy-new-year {
+	position: absolute;
+	top: 295px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	height: 112px;
+	background: url(images/happy-new-year.png) no-repeat;
+	background-size: contain;
+}
+#christmas_tree {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 250px;
+}
+@media screen and (max-width: 1024px) {
+	#christmas_scene .layer-1 {
+		background-image: url("images/parallax-mobile/layer1.png");
+		background-position: 40% bottom;
+	}
+	#christmas_scene .layer-2 {
+		background-image: url("images/parallax-mobile/layer2.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-3 {
+		background-image: url("images/parallax-mobile/layer3.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-4 {
+		background-image: url("images/parallax-mobile/layer4.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-5 {
+		background-image: url("images/parallax-mobile/layer5.png");
+		background-position: center bottom;
+	}
+}
+@media screen and (max-height: 1024px) {
+	#christmas_scene .layer-1 {
+		background-image: url("images/parallax-mobile/layer1.png");
+		background-position: 40% bottom;
+	}
+	#christmas_scene .layer-2 {
+		background-image: url("images/parallax-mobile/layer2.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-3 {
+		background-image: url("images/parallax-mobile/layer3.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-4 {
+		background-image: url("images/parallax-mobile/layer4.png");
+		background-position: center bottom;
+	}
+	#christmas_scene .layer-5 {
+		background-image: url("images/parallax-mobile/layer5.png");
+		background-position: center bottom;
+	}
+}
+
+@media  screen and (max-width: 1024px) {
+	.happy-new-year {
+		display: none;
+	}
+	.merry-christmas-text {
+		font-size: 60px;
+	}
+	#countdown {
+		padding-top: 45px;
+	}
+}
+@media  screen and (max-width: 565px) {
+	#countdown {
+		width: 100%;
+		margin-left:0;
+		left:unset;
+		font-size:30px;
+		text-align: center;
+	}
+	#countdown .countdown-globe::before{
+		display: none;
+	}
+	.merry-christmas-text {
+		font-size: 50px;
+	}
+}
+@media screen and (max-height:768px) {
+	#countdown {
+		font-size: 30px;
+	}
+	#countdown .countdown-globe{
+		height:180px;
+	}
+	.merry-christmas-text{
+		top: 165px;
+		font-size: 65px;
+	}
+	.happy-new-year{
+		width: 300px;
+		top: 255px;
+		margin-left:-150px;
+	}
+}
+@media screen and (max-height: 600px) {
+	.merry-christmas-text{
+		font-size: 50px;
+	}
+	.happy-new-year{
+		display: none;
+	}
+}

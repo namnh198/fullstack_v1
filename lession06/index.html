@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lession 06 - Javacript Thuần</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1> Progress Bar </h1>
+	<button id="btnPr_Bar">Start</button>
+	<div class="pr_bar">
+		<div id="progressbar"></div>
+		<h2 id="txtPr_Bar">0%</h2>
+	</div>
+
+	<h1>Control Box</h1>
+	<div class="ctrl_box">
+		<div id="controlBox">0%</div>
+	</div>
+	<input type="range" id="rangCtrlBox" min="0" max="100" value="0" />
+
+	<h1>Zoom Out</h1>
+	<button id="runZoomOut">Action</button>
+	<div id="zoomout"></div>
+
+	<h1>Opacity</h1>
+	<div class="opacity">
+		<div id="boxOpacity1"></div>
+		<div id="boxOpacity2"></div>
+	</div>
+
+	<h1> Change Color </h1>
+	<div id="color"></div>
+	<div class="change_color-line">
+		<div>
+			<label>R</label>
+			<input type="range" min="0" max="0" value="255" id="color_r">
+		</div>
+		<div>
+			<label>G</label>
+			<input type="range" min="0" max="0" value="255" id="color_g">
+		</div>
+		<div>
+			<label>B</label>
+			<input type="range" min="0" max="0" value="255" id="color_b">
+		</div>
+	</div>
+
+	<h1> Circle Change </h1>
+	
+	<div class="circle-wrap">
+		<p>Width : <span class="txtCircle"> 20px </span> - Height : <span class="txtCircle"> 20px </span></p>
+		<div id="boxCircle"></div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
