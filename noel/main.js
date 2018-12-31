@@ -44,7 +44,7 @@ function setElementHeight() {
 	$('#christmas_tree').css('width', width);
 }
 
-$('#countdown').countdown('2018/12/24', function(event) {
+$('#countdown').countdown('2019/01/01', function(event) {
 	$(this).html(
 		event.strftime('\
 			<div class="col-3 countdown-globe">%D <span>Days</span></div>\
